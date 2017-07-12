@@ -1,0 +1,32 @@
+****************************************
+Report : Averaged Power
+Design : project2
+Version: M-2016.12-SP3
+Date   : Sun Jun  4 19:45:40 2017
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           1.696e-03    0.0000    0.0000 1.696e-03 (76.53%)  i
+register                8.740e-05 4.807e-05 2.496e-05 1.604e-04 ( 7.24%)  
+combinational           1.307e-04 1.998e-04 2.932e-05 3.598e-04 (16.23%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 2.479e-04   (11.18%)
+  Cell Internal Power  = 1.915e-03   (86.37%)
+  Cell Leakage Power   = 5.428e-05   ( 2.45%)
+                         ---------
+Total Power            = 2.217e-03  (100.00%)
+
+1

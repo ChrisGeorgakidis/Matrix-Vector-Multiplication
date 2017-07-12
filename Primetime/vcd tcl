@@ -1,0 +1,11 @@
+vcd file final.vcd;
+
+vcd add -file final.vcd /*
+
+vcd on;
+
+run 500ns;
+
+vcd off
+
+quit -sim;

@@ -1,0 +1,62 @@
+Warning: Zero transition time will be used at to pins of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-066)
+Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
+Information: Zero transition time used at to pin of annotated arcs. Delays on not annotated delay arcs will be estimated using best available slew.  (PTE-054)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : project2
+Version: M-2016.12-SP3
+Date   : Sun Jun  4 19:48:10 2017
+****************************************
+
+
+  Startpoint: MAC_UNIT/mult_32/clock_r_REG211_S5
+               (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: MAC_UNIT/clock_r_REG206_S6
+               (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  MAC_UNIT/mult_32/clock_r_REG211_S5/CK (DFF_X1)          0.00       0.00 r
+  MAC_UNIT/mult_32/clock_r_REG211_S5/Q (DFF_X1)           0.09 *     0.09 r
+  MAC_UNIT/mult_32/U403/ZN (XNOR2_X1)                     0.08 *     0.17 r
+  MAC_UNIT/mult_32/U247/Z (BUF_X1)                        0.08 *     0.25 r
+  MAC_UNIT/mult_32/U467/ZN (OAI22_X1)                     0.06 *     0.30 f
+  MAC_UNIT/mult_32/U111/CO (HA_X1)                        0.07 *     0.37 f
+  MAC_UNIT/mult_32/U244/ZN (NAND2_X1)                     0.03 *     0.40 r
+  MAC_UNIT/mult_32/U246/ZN (NAND3_X1)                     0.04 *     0.44 f
+  MAC_UNIT/mult_32/U102/S (FA_X1)                         0.14 *     0.59 r
+  MAC_UNIT/mult_32/U409/ZN (NOR2_X1)                      0.03 *     0.62 f
+  MAC_UNIT/mult_32/U429/ZN (NOR2_X1)                      0.05 *     0.66 r
+  MAC_UNIT/mult_32/U408/ZN (NAND2_X1)                     0.03 *     0.69 f
+  MAC_UNIT/mult_32/U407/ZN (OAI21_X1)                     0.05 *     0.75 r
+  MAC_UNIT/mult_32/U458/ZN (AOI21_X1)                     0.03 *     0.78 f
+  MAC_UNIT/mult_32/U431/ZN (INV_X1)                       0.03 *     0.81 r
+  MAC_UNIT/mult_32/U270/ZN (NAND2_X1)                     0.04 *     0.85 f
+  MAC_UNIT/mult_32/U253/ZN (NAND3_X1)                     0.04 *     0.89 r
+  MAC_UNIT/mult_32/U260/ZN (AND2_X1)                      0.04 *     0.93 r
+  MAC_UNIT/mult_32/U259/ZN (NOR3_X1)                      0.02 *     0.95 f
+  MAC_UNIT/clock_r_REG206_S6/D (DFF_X1)                   0.01 *     0.96 f
+  data arrival time                                                  0.96
+
+  clock clock (rise edge)                                 1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  clock reconvergence pessimism                           0.00       1.00
+  MAC_UNIT/clock_r_REG206_S6/CK (DFF_X1)                             1.00 r
+  library setup time                                     -0.04 *     0.96
+  data required time                                                 0.96
+  ------------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

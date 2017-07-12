@@ -1,0 +1,29 @@
+ 
+read_verilog /home/inf2014/cgeorgakidis/SoC/final.v
+
+current_design project2
+
+set link_library {/home/inf2014/cgeorgakidis/SoC/NangateOpenCellLibrary_typical.db /home/inf2014/cgeorgakidis/SoC/dw_foundation.sldb *}
+#set link_library {NangateOpenCellLibrary_typical.db dw_foundation.sldb *}
+
+link_design -keep_sub_designs
+
+read_ddc /home/inf2014/cgeorgakidis/SoC/final.ddc
+
+read_sdf /home/inf2014/cgeorgakidis/SoC/final.sdf
+
+create_clock "clock" -name clock -period 1 -waveform { 0 0.5 }
+
+report_timing > /home/inf2014/cgeorgakidis/SoC/reports/primetime_reports_verilog/pt_timing_report.txt
+
+set auto_wire_selection true
+
+set power_enable_analysis true
+
+set power_analysis_mode averaged
+
+read_vcd /home/inf2014/cgeorgakidis/SoC/final.vcd
+
+update_power
+
+report_power > /home/inf2014/cgeorgakidis/SoC/reports/primetime_reports_verilog/pt_power_report.txt

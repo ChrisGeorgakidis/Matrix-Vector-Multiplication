@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : project2
+Version: L-2016.03-SP5-5
+Date   : Sun Jun  4 19:07:07 2017
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/inf2014/cgeorgakidis/SoC/NangateOpenCellLibrary_typical.db)
+
+Number of ports:                          368
+Number of nets:                          1921
+Number of cells:                         1396
+Number of combinational cells:           1043
+Number of sequential cells:               340
+Number of macros/black boxes:               0
+Number of buf/inv:                        159
+Number of references:                       8
+
+Combinational area:               1165.878012
+Buf/Inv area:                       87.514001
+Noncombinational area:            1433.473948
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  2599.351960
+Total area:                 undefined
+1
